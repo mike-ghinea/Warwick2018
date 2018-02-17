@@ -17,7 +17,8 @@
   </head>
   <body>
     <div id="map"></div>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -30,7 +31,10 @@
         var script = document.createElement('script');
         // This example uses a local copy of the GeoJSON stored at
         // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-        script.src = 'file:///home/david/Code/Hackathons/mydata';
+        var link = 'https://data.police.uk/api/crimes-street/all-crime?lat=52.629729&lng=-1.131592&date=2017-02'
+        var data = $.getJSON(link);
+        console.log(data);
+        script = data;
         document.getElementsByTagName('head')[0].appendChild(script);
       }
 
