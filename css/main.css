@@ -1,13 +1,37 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#numberOfSolved {
+    font-weight: bold;
+    font-size: 40px;
+}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+#menu > a {
+    margin: 5px 15px 5px 15px;
+    font-variant: all-petite-caps;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #cccccc;
+}
 
+#menu > a:link, #menu > a:visited, #menu > a:active {
+    color: inherit;
+}
 
-
-
+#menu > a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 
