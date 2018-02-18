@@ -16,19 +16,19 @@ $(document).ready(function() {
 });
 
 $('textarea').on('keyup', function() {
-    database.ref('readingQuotes').on('value', data => updateQuotes(data.val()));
+    database.ref('readingQuotes').once('value', data => updateQuotes(data.val()));
 });
 
 $('textarea').on('click', function() {
-    database.ref('startQuotes').on('value', data => updateQuotes(data.val()));
+    database.ref('startQuotes').once('value', data => updateQuotes(data.val()));
 });
 
 $('textarea').on('change', function() {
-    database.ref('stopQuotes').on('value', data => updateQuotes(data.val()));
+    database.ref('stopQuotes').once('value', data => updateQuotes(data.val()));
 });
 
 $('img').on('click', function() {
-    database.ref('naggingQuotes').on('value', data => updateQuotes(data.val()));
+    database.ref('naggingQuotes').once('value', data => updateQuotes(data.val()));
 });
 
 var quotes = [];

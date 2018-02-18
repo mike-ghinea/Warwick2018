@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99a8ecb7-dee9-408b-a7d5-a5a1b1c9aa3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="256">
+              <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -168,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518906125183</updated>
       <workItem from="1518906129117" duration="5176000" />
-      <workItem from="1518916756524" duration="4865000" />
+      <workItem from="1518916756524" duration="5504000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor code">
       <created>1518906954221</created>
@@ -191,11 +189,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518916951445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add quotes">
+      <created>1518921635433</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518921635433</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10041000" />
+    <option name="totallyTimeSpent" value="10680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="-5" width="1841" height="1086" extended-state="6" />
@@ -231,7 +236,8 @@
     <MESSAGE value="Refactor code" />
     <MESSAGE value="Initiate project 'Rubber Duck'" />
     <MESSAGE value="Re-add ruber duck" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-add ruber duck" />
+    <MESSAGE value="Add quotes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add quotes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -275,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="256">
+          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding />
         </state>
       </provider>
