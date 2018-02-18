@@ -16,11 +16,16 @@ $(document).ready(function() {
 });
 
 $('textarea').on('keyup', function() {
-        database.ref('readingQuotes').on('value', data => updateQuotes(data.val()));
-    });
+    database.ref('readingQuotes').on('value', data => updateQuotes(data.val()));
+});
+
 $('textarea').on('change', function() {
-        database.ref('stopQuotes').on('value', data => updateQuotes(data.val()));
-        });
+    database.ref('stopQuotes').on('value', data => updateQuotes(data.val()));
+});
+
+$('img').on('click', function() {
+    database.ref('naggingQuotes').on('value', data => updateQuotes(data.val()));
+});
 
 var quotes = [];
 function updateQuotes(newQuotes) {
