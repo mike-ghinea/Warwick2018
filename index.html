@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1><span id="numberOfSolved"></span> problems solved by RubberDuck</h1>
+</body>
+</html>
+
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        authDomain: "rubberduck-69fdc.firebaseapp.com",
+        databaseURL: "https://rubberduck-69fdc.firebaseio.com",
+        projectId: "rubberduck-69fdc",
+    };
+    firebase.initializeApp(config);
+
+    var database = firebase.database();
+
+    var solved = database.ref('numberOfProblemsSolved');
+
+    solved.on('value', data => updateSolved(data.val()));
+
+    function updateSolved(numberOfSolved) {
+        $("#numberOfSolved").text(numberOfSolved);
+    }
+</script>
