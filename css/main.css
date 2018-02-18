@@ -1,25 +1,24 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #numberOfSolved {
-    font-weight: bold;
-    font-size: 40px;
-}
+    font-weight: bold;}
 
 
 #menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 #menu > a {
     margin: 5px 15px 5px 15px;
     font-variant: all-petite-caps;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
     color: #cccccc;
 }
@@ -33,12 +32,27 @@ body {
     font-weight: bold;
 }
 
+.duck-yes, .duck-no {
+    width: 150px;
+    height: 34px;
+    font-size: 18px;
+}
 
+.input-row {
+    min-height: 500px;
+    height: 500px;
+}
 
+.input-row > * {
+    height: 100%;
+}
 
-
-
-
+.duck-space {
+    position: fixed;
+    width: 300px;
+    bottom: 10px;
+    right: 10px;
+}
 
 
 

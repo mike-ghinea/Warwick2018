@@ -12,16 +12,32 @@ $(document).ready(function() {
     refs.solved = database.ref('numberOfProblemsSolved');
     refs.notSolved = database.ref('numberOfProblemsNotSolved');
     refs.solved.on('value', data => updateSolved(data.val()));
+    database.ref('quotes').on('value', data => updateQuotes(data.val()))
 });
 
+var quotes = [];
+function updateQuotes(newQuotes) {
+    quotes = newQuotes;
+
+    newQuote();
+}
+
+function newQuote() {
+    var randomIndex = Math.floor(Math.random()*quotes.length);
+
+    var quote = quotes[randomIndex];
+
+    $(".duck-speak").text(quote);
+
+}
 function updateSolved(numberOfSolved) {
     $("#numberOfSolved").text(numberOfSolved);
 }
 
-function incrementRef(ref) {
-    ref.on('value', data => {
+function incrementRef(dbRef) {
+    dbRef.once('value', data => {
         var oldNumber = data.val();
-        ref.set(oldNumber+1);
+        dbRef.set(oldNumber+1);
     })
 }
 
