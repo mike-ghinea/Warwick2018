@@ -17,8 +17,8 @@ $(document).ready(function() {
     refs.solved.on('value', data => updateSolved(data.val()));
     database.ref('quotes').on('value', data => updateQuotes(data.val()));
 
-    $newQuote.asObservable()
-      .debounce(1000)
+    $newQuote
+      .throttleTime(2000)
       .subscribe(quote => {
           $(".duck-speak").text(quote);
       })
@@ -52,7 +52,7 @@ function newQuote() {
 
     var quote = quotes[randomIndex];
 
-    $newQuote.onNext(quote);
+    $newQuote.next(quote);
 
 }
 
