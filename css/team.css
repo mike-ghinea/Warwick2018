@@ -15,4 +15,6 @@
 
 .alex>p, .mike>p, .david>p{
   color: white;
+  text-align: center;
+
 }

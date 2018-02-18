@@ -45,6 +45,7 @@ function newQuote() {
     $(".duck-speak").text(quote);
 
 }
+
 function updateSolved(numberOfSolved) {
     $("#numberOfSolved").text(numberOfSolved);
 }
