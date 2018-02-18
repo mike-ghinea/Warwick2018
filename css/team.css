@@ -1,0 +1,18 @@
+.team{
+    display: block;
+    width: 90%;
+    height: 400px;
+}
+
+.alex, .mike, .david{
+  display: inline-block;
+  height: 80%;
+  background-color: black;
+  border: 2px solid white;
+  margin: 8px 10px;
+  width: 30%;
+}
+
+.alex>p, .mike>p, .david>p{
+  color: white;
+}
