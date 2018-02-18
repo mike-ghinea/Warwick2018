@@ -18,14 +18,19 @@ $(document).ready(function() {
     database.ref('quotes').on('value', data => updateQuotes(data.val()));
 
     $newQuote
-      .throttleTime(2000)
+      .debounceTime()
       .subscribe(quote => {
           $(".duck-speak").text(quote);
       })
 });
 
+var readingQuotesTimer = 0;
 $('textarea').on('keyup', function() {
+  if(readingQuotesTimer == 0)
     database.ref('readingQuotes').once('value', data => updateQuotes(data.val()));
+  else if(readingQuotesTimer == 50)
+    readingQuotesTimer = -1;
+  readingQuotesTimer++;
 });
 
 $('textarea').on('click', function() {
